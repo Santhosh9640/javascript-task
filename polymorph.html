@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star</title>
+</head>
+<body>
+    <script>
+        function star(name,movie,year){
+            this.name=name;
+            this.movie=movie;
+            this.year=year;
+        };
+        star.prototype_getDetails=function(){
+            console.log(this.name);
+        }
+        let star1=new star("ajith","gambler",'2009');
+        let star2=new star("dulquer","charlie",'2015');
+        document.write(star1.name);
+        document.write("<br>")
+        document.write(star2.movie);
+        document.write("<br>")
+        console.log(star.getDetails());
+
+        </script>
+</body>
+</html>
