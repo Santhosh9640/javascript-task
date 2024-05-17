@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String operations</title>
+</head>
+<body>
+    <script>
+        // length of an element
+        let str="hyper text markup language"
+        let len=str.length
+        document.write(len)
+        document.write("<br>")
+        // string concatenation
+        let str1="saptha sagaralu daati "
+        let str2="is a must watch"
+        let newstr=str1+str2
+        document.write(newstr)
+        document.write("<br>")
+        //escape characters
+        let str3="\'watcing\' a movie in thetare is a vibe"
+        let str4="\"you have\" to watch star movie"
+        let str5="\\will\\ go and watc this weekend"
+        document.write(str3)
+        document.write(str4)
+        document.write(str5)
+        document.write("<br>")
+        // breaking long strings
+        let str6="ipl match is going to happen at\ uppal this weekend"
+        document.write(str6)//some browsers does not support this feature
+        document.write("<br>")
+        //substring method some part of main string
+        const str7 ="abraham benjamin devilliers"
+        let substr=str7.substring(0,7)
+        document.write(substr)
+        document.write("<br>")
+        // convert string to upperCase and lowerCase
+        const str8="star is releasing on may10th"
+        let upperCase=str8.toUpperCase();
+        let lowerCase=str8.toLowerCase();
+        document.write(upperCase);
+        document.write("<br>")
+        document.write(lowerCase);
+        document.write("<br>")
+        // string search in javascript
+        const str9="hyper text markup language"
+        let searchStr=str9.indexOf('text');
+        let searchStr1=str9.indexOf('hyper');
+        document.write(searchStr);
+        document.write("<br>")
+        document.write(searchStr1);
+        document.write("<br>")
+        let searchStr2=str9.indexOf('markup');
+        document.write(searchStr2);
+        document.write("<br>")
+        // string replace 
+        let man="hyper text mark up language"
+        let newMan=man.replace("text","test")
+        document.write(newMan);
+        document.write("<br>")
+        // trimming whitespace
+        let str11="          iam going     to watch     a moviee now"
+        let newStr11=str11.trim();
+        document.write(newStr11);
+        document.write("<br>")
+        // accessing characters from string charAt()
+        const str111="can we go on a trip"
+        let charAtIndex=str111[4]
+        document.write(charAtIndex);
+        document.write("<br>")
+        charAtIndex=str111.charAt(4)
+        document.write(charAtIndex);
+        document.write("<br>")
+        // string comparison in js
+        const str222="hyper text mark up language"
+        const str22=new String("hyper text mark up language")
+        document.write(str222==str22)
+        document.write("<br>")
+        document.write(str222===str22)
+        document.write("<br>")
+        document.write(str22.localeCompare(str22))
+        
+
+
+
+        
+    </script>
+</body>
+</html>

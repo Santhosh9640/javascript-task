@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    <script>
+        /*accessing elements*/ 
+        let movies=["khaleja","madhuram","manu","julai"];
+        document.write(movies[0]);
+        document.write("<br>")
+        document.write(movies[1]);
+        document.write("<br>")
+        document.write(movies[2]);
+        document.write("<br>")
+        document.write(movies[3]);
+        document.write("<br>")
+        /*accessing the first element of an array*/ 
+        let teams=["rcb","mi","srh","csk"]
+        let firstItem=teams[0];
+        document.write(firstItem);
+        document.write("<br>")
+        /*accessing the last element of an array*/
+        let Teams=["rcb","mi","srh","csk"]
+        let lastItem=Teams[Teams.length-1];
+        document.write(lastItem);
+        document.write("<br>") 
+        /*modifying the elements*/
+        let hero=["ajith","dhanush","dulquer","rakshith"]
+        hero[2]="nivin pauly";
+        document.write(hero);
+        document.write("<br>");
+        /*adding elements*/
+        let cricketer=["abd","starc","watson","finn allen"]
+        cricketer.push("sabbirrahman"); //element at end
+        cricketer.unshift("anderson"); //element at start
+        document.write(cricketer);
+        document.write("<br>");
+        /* removing elements*/
+        let place=["kannur","udipi","ooty","madhurai"]
+        let lastElement=place.pop();
+        document.write(place);
+        document.write("<br>");
+        let firstElement=place.shift();
+        document.write(place);
+        document.write("<br>");
+        document.write(place);
+        document.write("<br>");
+        place.splice(0,1);
+        document.write(place);
+        document.write("<br>");
+        /* array length*/
+        let course=["cse","ece","eee","mech","civil"]
+        document.write(course.length);
+        document.write("<br>");
+        /*increasing or decreasing length*/
+        let person=["ram","dinesh","mahesh","karthick"]
+        person.length=8;
+        document.write(person);
+        document.write("<br>"); 
+        person.length=3;
+        document.write(person);
+        document.write("<br>");
+        /*itertaing through array elements*/
+        let city=["hyd","chennai","banglore","noida","kolkatha","delhi"]
+        for(let i=0;i<city.length;i++){
+            document.write(city[i]);
+            document.write("<br>")  
+
+        }
+        /*array concatination*/
+        let name=["gvm","abd","kathy","nivin"]
+        let player=["kohli","rohit","dhoni"]
+        let concatArray=name.concat(player);
+        document.write(concatArray);
+        document.write("<br>")
+        /* array to string*/
+        let sports=["cricket","hockey","kho-kho","kabaddi"] 
+        document.write(sports.toString());
+        document.write("<br>");
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
